@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainColor: #442f28;
+    --subColor1: #ffdf9f;
+    --subColor2: #ffd37b;
+    --subColor3: #deae47;
+    --subColor4: #c28633;
+    --lightBg: #eeeeee;
+    --whiteColor: #ffffff;
+    --lightGray: #a5a5a5;
+    --grayColor: #6d6d6d;
+    --priceColor: #cca300;
+    --bgItemColor: #f0f0f0;
+  }
+
+a {
+    text-decoration: none;
+}
+
+body{
+    /* width: 100%;
+    height: 150vh; */
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    font-family: "Fustat", sans-serif;
+}
+.main {
+    width: 90%;
+    height: 100%;
+    margin: 5rem auto 5rem;
+}
+.main .container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 2rem auto 5rem;
+}
+@media only screen and (max-width:768px) {
+    .container .content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.info h2 {
+    color: black;
+    font-size: 28px;
+    padding: 0, 8rem;
+}
+.info {
+    width: 100%;
+}
+@media only screen and (max-width:768px) {
+    .info {
+        width: 100%;
+    }
+}
+.info h2 {
+    width: 100%;
+}
+@media only screen and (max-width:768px) {
+    .info h2 {
+        width: 100%;
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+}
+.info p {
+    color: rgb(167, 167, 167);
+    max-height: 1rem;
+    margin-bottom:5rem;
+    font-size: 22px;
+}
+@media only screen and (max-width:768px) {
+    .info p {
+        width: 100%;
+        font-size: 17px;
+    }
+}
+.container .data {
+    text-align: right;
+
+}
+.container .data h3 {
+    margin-bottom: 1rem;
+    color: var(--mainColor);
+}
+@media only screen and (max-width:768px) {
+    .container .data h3{
+        width: 100%;
+        font-size: 17px;
+        text-align: center;
+    }
+}
+.container .data p {
+    text-align: right;
+    margin-bottom: 1rem;
+    color: var(--grayColor);
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+@media only screen and (max-width:768px) {
+    .container .data p {
+        font-size: 17px;
+        text-align: center;
+    }
+}
+.container .input-box {
+    width: 50%;
+    outline: none;
+    border: none;
+}
+@media only screen and (max-width:768px) {
+    .container .input-box {
+        width: 100%;
+    }
+}
+.container .input-box input {
+    background-color: rgb(237 237 237);
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;;
+    padding: 15px;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-size: .9rem;
+    color: var(--mainColor);
+    line-height: 1.5rem;
+}
+.container .input-box textarea {
+    background-color: rgb(237 237 237);
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    resize: none;
+    padding: 15px;
+    width: 100%;
+    text-align: right;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-size: .9rem;
+    color: var(--mainColor);
+    line-height: 1.5rem;
+}
+
+.container .input-box .submit {
+    background-color: var(--subColor2);
+    text-align: center;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--mainColor);
+    line-height: 1.5rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.container .input-box .submit:hover {
+    background-color: var(--subColor3);
+    color: var(--whiteColor);
+}
+
+.container .social {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.container .social>p {
+        text-align: right;
+        margin-bottom: 1rem;
+        font-family: "Noto Kufi Arabic", sans-serif;
+        font-size: .9rem;
+        color: var(--grayColor);
+        line-height: 1.5rem;
+
+}
+@media only screen and (max-width:768px) {
+    .container .social>p{
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width:768px) {
+    .container .social .apps {
+        display: flex;
+        width: 50%;
+    }
+}
+.container .social .apps>i {
+    margin-left: 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #b8b8a5;;
+}
+@media only screen and (max-width:768px) {
+    .container .social .apps>i {
+        font-size: 18px;
+    }
+}
+.container .content .image {
+    width:50%;
+}
+@media only screen and (max-width:768px) {
+    .container .content .image {
+        width: 100%;
+        margin-bottom: 0;
+        display: flex;
+        order: -1;
+    }
+}
+.container .content img {
+    width: 100%;
+    height: 100% ;
+    object-fit: cover;
+}
